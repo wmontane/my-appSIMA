@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
 import { AcumuladorComponent } from './acumulador/acumulador.component';
 import { CronometroComponent } from './cronometro/cronometro.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AcumuladorComponent,
-    CronometroComponent
+    CronometroComponent,
+    NavbarComponent
   ],
     imports: [
         BrowserModule,

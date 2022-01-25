@@ -28,6 +28,11 @@ export class AppComponent {
     }
   ];
 
+
+  mostrarConsola(phone:String): void{
+    console.log(phone)
+  }
+
   mostrarHora(event: any): void {
     this.horaActual = new Date();
     const { target } = event;
@@ -45,6 +50,8 @@ export class AppComponent {
   clearTimeStamps() {
     this.timeStamps = [];
   }
+
+
 }
 
 interface Color {
