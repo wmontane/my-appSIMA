@@ -15,11 +15,20 @@ export class CronometroComponent implements OnInit {
   subscription: Subscription = new Subscription();
   timeInSeconds: number = 0;
   isPlaying: boolean = false;
+  timeStamps: number[] = []
 
   constructor() { }
 
   ngOnInit(): void {
     this.timeInSeconds = this.minutes * 60 + this.segundo;
+  }
+
+  addToTimeStamps($event: number) {
+    this.timeStamps.push($event);
+  }
+
+  clearTimeStamps() {
+    this.timeStamps = [];
   }
 
   play():void {

@@ -28,6 +28,9 @@ export class AppComponent {
     }
   ];
 
+  onCLickCard(){
+    console.log('OnclickCard')
+  }
 
   mostrarConsola(phone:String): void{
     console.log(phone)
